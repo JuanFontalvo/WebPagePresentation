@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 100rem;
+    background: #272727;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+    text-align: center;
+}
+
+.menuItems > *  {
+    padding: 1rem;
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: auto; 
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.navMenu a:hover {
+    color: #fddb3a;
+}
+
+.btnMenu {
+    margin: 30px 30px 0 0;
+    font-size: 25px;
+    color: #f6f4e6;
+    cursor: pointer;
+    display: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnMenu:hover {
+    color: #fddb3a;
+}
+
+.menuItems.show {
+    top: 64px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.header img {
+    margin: 1.5rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.header p {
+    background: #f6f4e6;
+    color: #272727;
+    border-radius: 5vh;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.subHeader{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.subHeader p {
+    background: #f6f4e6;
+    color: #272727;
+    border-radius: 5vh;
+    padding: 0.8rem 2.5rem;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    background: #f6f4e6;
+    padding: 2rem;
+    border-radius: 5vh;
+}
+
+.aboutMe h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    color: #272727;
+}
+
+.aboutMe p {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.expContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.expContainer h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color:#f6f4e6;
+    padding: 0.8rem;
+    margin: 1.5rem;
+    border-radius: 5vh;
+}
+
+.expSubContainer{
+    display: flex;
+}
+
+.expSubContainer .expBox {
+    background: #f6f4e6;
+    margin: 0 1.5rem 1.5rem;
+    padding: 2rem;
+    border-radius: 5vh;
+    text-align: center;
+}
+
+.expSubContainer div p:nth-last-child(3)  {
+    text-align: center;
+    line-height: 3;
+    color: #272727;
+    opacity: 80%;
+}
+
+.expSubContainer div p:nth-last-child(2)  {
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+.expSubContainer div div i {
+    font-size: 3rem;
+    margin: 1.5rem 0.5rem 0.5rem;
+    color: #272727;
+}
+
+.expSubContainer div div img {
+    width: 3rem;
+    margin: 1.5rem 0.5rem 0.5rem;
+}
+
+.certificateDevf {
+    margin: 0 auto;
+    max-width: 60%;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.certificateDevf img {
+    width: 100%;
+    height: auto;
+}
+
+.certificateDevf a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.certificateDevf a:hover {
+    color: #fddb3a;
+}
+
+footer {
+    width: auto;
+    background: #f6f4e6;
+    height: 5rem;
+    margin:1.5rem;
+    border-radius: 10vh;
+}
+
+footer p {
+    text-align: right;
+    padding: 2rem;
+    color: #272727;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 858px) {
+    .navMenu {
+        text-align: right;
+    }
+
+    .btnMenu {
+        display: inline-flex;
+    }
+
+    .menuItems {
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 64px);
+        background: #272727;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    
+    .menuItems a {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .expSubContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificateDevf {
+        width: auto;
+        max-width: 100%;
+        margin: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 858px) and (orientation: landscape) {
+    .menuItems a {
+        margin: 5px 0 0 0;
+    }
+    
+    .menuItems {
+        overflow: scroll;
+        height: calc(100% - 64px);
+    }
+}
