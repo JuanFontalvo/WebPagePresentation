@@ -180,6 +180,7 @@ body {
 .certificateDevf img {
     width: 100%;
     height: auto;
+    overflow: scroll;
 }
 
 .certificateDevf a {
